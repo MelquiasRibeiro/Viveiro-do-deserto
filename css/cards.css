@@ -1,6 +1,7 @@
 :root {
-  --bg: #071e36;
-  --card-bg: #041221;
+  --bg: #fafafa;
+  --card-bg: #689E04;
+  --hoover-bg:#7A954A;
 }
 
 body {
@@ -23,6 +24,10 @@ input::placeholder {
 
 .navbar-item {
   color: ghostwhite;
+}
+
+.navbar-item:hover {
+  color: var(--hoover-bg);
 }
 
 /* Card start*/

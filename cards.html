@@ -19,7 +19,7 @@
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="#">
-            <img src="https://cdn.emk.dev/templates/bulma-logo-light.png" alt="Logo">
+            <img src="./assets//flores/text.png" alt="Logo" >
           </a>
           <span class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
@@ -27,8 +27,8 @@
         </div>
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Contato
+            <a class="navbar-item is-active" href="#contact" style="color: ghostwhite;">
+              Contato &nbsp; <i class="far fa-comments"> </i>
             </a>
           </div>
         </div>
@@ -40,8 +40,8 @@
       <div class="section">
         <div class="columns">
           <div class="column has-text-centered">
-            <h1 class="title" style="color: ghostwhite;">Viveiro Paraíso do Deserto</h1><br/>
-            <p className="subtitle" style="color: ghostwhite;">
+            <h1 class="title">Viveiro Paraíso do Deserto</h1><br/>
+            <p className="subtitle">
               Nós do Viveiro Paraíso somos criadores
               especializados em rosas do desesto, nossa plantas
               são cultivadas com o máximo amor e carinho para 
@@ -56,7 +56,7 @@
             <div class="card large">
               <div class="card-image is-16by9">
                 <figure class="image">
-                  <img :src="card.image" alt="Image" width=”352” height=”198” />
+                  <img :src="card.image" alt="Image"  />
                 </figure>
               </div>
               <div class="card-content">
@@ -73,18 +73,90 @@
         </div>
       </div>
     </div>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading has-text-centered">
+          <h3 class="title is-2">Contato</h3>
+        </div>
+        <br>
+        <div class="has-text-centered">
+          <h4 class="subtitle is-5">Fale conosco pelo whatsapp</h4>
+          <br/>
+          <div class="section-heading">
+            <a href="https://api.whatsapp.com/send?phone=5599988564111&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20rosas%20do%20desert" target="_blank"class="button is-medium">
+              <span class="icon" style="color: #689E04;">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              <span style="color: #689E04;">
+                Whatsapp
+              </span>
+            </a>
+          </div>
+        </div>
+          <br/>
+        <div class="has-text-centered">
+          <h4 class="subtitle is-5">nos envie um Email</h4>
+        </div>
+        <br/>
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <form
+            action="https://formspree.io/mgenynvy"
+            method="POST"
+            > 
+            <div class="box">
+              <div class="field">
+                <label class="label" style="color: ghostwhite;" >Nome</label>
+                <div class="control">
+                  <input class="input" type="text" value="" name="Nome" placeholder="Nome" required> 
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label" style="color: ghostwhite;">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Email" value=""name="_replyto" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope" ></i>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label" style="color: ghostwhite;">Mensagem</label>
+                <div class="control">
+                  <textarea class="textarea" value=""  name="Mensagem" placeholder="Fale conosco" required></textarea>
+                </div>
+              </div>
+              
+              <div class="field is-grouped has-text-centered">
+                <div class="control">
+                  <button class="button is-large" type="submit" value="Send"><span class="icon" style="color: #689E04;">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span style="color: #689E04;">Enviar</span></button>
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
           <div class="soc">
-            <a href="#"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5599988564111&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20rosas%20do%20deserto"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/viveiroparaisododesertosd/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
           </div>
           <p>
-            <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
-            The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. <br>
+            <strong>Viveiro Paraíso</strong> by <a href="https://melquiasribeiro.github.io/Perfil/">Melquias Riebeiro</a>.
+            <br/>
+            2020 | Todos os direito reservasdos. <br>
           </p>
         </div>
       </div>
